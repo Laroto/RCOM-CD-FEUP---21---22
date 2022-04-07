@@ -1,6 +1,10 @@
 #include "linklayer.h"
 
 int tentativas;
+volatile int STOP=FALSE;
+volatile unsigned char flag_tentativas=1;
+volatile unsigned char flag_alarme=1;
+volatile unsigned char flag_error=0;
 
 void atende()
 {
@@ -177,9 +181,4 @@ int llopen(linkLayer connectionParameters)
             return TRUE;
         }
     }    
-}
-
-int main()
-{
-   
 }

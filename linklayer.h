@@ -49,11 +49,6 @@ typedef struct linkLayer{
 #define BCC_write 0x06
 #define BCC_reader 0x00
 
-volatile int STOP=FALSE;
-volatile unsigned char flag_tentativas=1;
-volatile unsigned char flag_alarme=1;
-volatile unsigned char flag_error=0;
-
 #define TRAMA_I 1
 #define TRAMA_S 0
 
